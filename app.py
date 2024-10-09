@@ -10,7 +10,6 @@ class VoiceRecorder:
     def __init__(self):
         self.root = tk.Tk()
         self.root.title('Voice Recorder')
-        self.root.iconphoto(False, tk.PhotoImage(file='./icon.png')) # Icon from https://www.flaticon.com/authors/kliwir-art
         self.root.resizable(False, False)
         self.button = tk.Button(text='🎤', font=('Arial', 120, 'bold'), command=self.click_handler)
         self.button.pack()
